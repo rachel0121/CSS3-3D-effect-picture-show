@@ -1,0 +1,13 @@
+body{background:darkslategray; margin: 0; }
+
+.box{width: 1300px; margin: auto; margin-top: 100px;}
+
+.contentBox{width: 240px; height: 425px; -webkit-perspective:400; -moz-perspective: 400; float: left; margin-left: 20px; text-align: center;}
+
+.imgContainer{width: 240px; height: 425px; position: relative;  -webkit-transform-style:preserve-3d; -webkit-transition: 1.5s; -moz-transform-style:preserve-3d; -moz-transition: 1.5s; }
+
+.contentBox:hover .imgContainer{-webkit-transform: rotateY(180deg); -moz-transform: rotateY(180deg);}
+
+.imgFront{width: 240px; height: 425px; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; }
+
+.imgBack{width: 240px; height: 425px; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; color: orange; position: absolute; left: 0; top: 0; background: blueviolet; -webkit-transform: rotateY(180deg);}
